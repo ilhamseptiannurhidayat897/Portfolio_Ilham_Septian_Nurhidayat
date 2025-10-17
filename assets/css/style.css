@@ -1,0 +1,104 @@
+/* ================================
+   Ilham Septian Nurhidayat Portfolio Style
+   Theme: Dark Elegant + Glass Effect
+   ================================ */
+
+/* Font & Base */
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  color: #dee2e6;
+  background-color: #343a40;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+/* Glass effect base */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Section titles */
+h2, h3, h4 {
+  color: #fff;
+}
+
+/* Text Muted */
+.text-muted {
+  color: #6c757d;
+}
+
+/* Nav and Header */
+header {
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+header.scrolled {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation link hover */
+nav a:hover {
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+/* Button styles */
+button,
+a.button {
+  transition: all 0.2s ease;
+}
+button:hover,
+a.button:hover {
+  opacity: 0.9;
+}
+
+/* Card Hover */
+article:hover {
+  transform: translateY(-4px);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Inputs */
+input, textarea {
+  background: transparent;
+  border: 1px solid #495057;
+  color: #e9ecef;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #adb5bd;
+  background: rgba(255, 255, 255, 0.05);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #6c757d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text a {
+    display: block;
+    margin: 8px auto;
+  }
+}
+
+/* Smooth hover for cards & buttons */
+.glass:hover {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Focus outline */
+.focus-ring:focus {
+  outline: 3px solid rgba(66, 153, 225, 0.12);
+  outline-offset: 2px;
+}
